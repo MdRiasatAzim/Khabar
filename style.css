@@ -1,0 +1,638 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: "pacifico";
+	src:url(fonts/Pacifico-Regular.ttf);
+}
+
+@font-face{
+	font-family: "raleway";
+	src:url(fonts/Raleway-Regular.ttf);
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: raleway;
+}
+
+.menubar{
+	margin-top: 15px;
+	line-height: 0;
+	color: #FD4E00;
+}
+
+.menubar a{
+	color: #FD4E00;
+	text-decoration: none;
+}
+
+.menubar .header{
+	display: flex;
+	justify-content: flex-start;
+	text-transform: uppercase;
+}
+
+.menubar .menu>ul{
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	line-height: 20px;
+}
+
+.menubar .menu>ul>li{
+	margin: auto 5px;
+	padding: 10px;
+}
+
+/* Menubar End */
+
+.banner-image{
+	width: 100%;
+	position: relative;
+}
+
+.banner .banner-image img{
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+
+.banner .banner-image .banner-bg{
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	background: rgba(0,0,0,0.5);
+}
+
+.banner .banner-text .header1{
+	font-family: pacifico;
+	position: absolute;
+	color: white;
+	font-size: 50px;
+	top: 170px;
+	left: 80px;
+}
+
+.banner .banner-text .header2{
+	font-family: pacifico;
+	position: absolute;
+	color: white;
+	font-size: 50px;
+	top: 250px;
+	left: 160px;
+}
+
+/* Banner Image End */
+
+.about-us{
+	padding-top: 65px;
+	padding-bottom: 65px;
+	position: relative;
+}
+
+.about-us .about-image img{
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	border-radius: 30px;
+}
+.about-us .header-text h1{
+	text-align: right;
+	color: #FD4E00;
+}
+
+.about-us .about-text p{
+	width: 350px;
+	color: white;
+	text-align: justify;
+	background: #FD4E00;
+	padding: 15px 25px;
+	border-radius: 30px;
+	position: absolute;
+	top: 210px;
+	right: 40px;
+	font-size: 14px;
+	z-index: 1;
+}
+
+.about-us .about-bg{
+	width: 350px;
+	height: 220px;
+	background: rgba(253,78,0,0.2);
+	position: absolute;
+	top: 225px;
+	right: 25px;
+	border-radius: 30px;
+}
+
+/* About Us End */
+
+.gallery{
+	background: #FD4E00;
+}
+.gallery>h1{
+	padding-top: 25px;
+	text-align: center;
+	color: white;
+}
+
+.gallery .gallery-photos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+
+.gallery .gallery-photos img{
+	width: 300px;
+    height: 250px;
+    margin: 10px;
+    padding: 10px;
+	object-fit: cover;
+	border-radius: 30px;
+}
+
+/* Gallery End */
+
+.chef>h1{
+	text-align: center;
+	color: #FD4E00;
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+
+.chef .chef-left{
+	text-align: center;
+	margin-top: 25px;
+}
+
+.chef .chef-left img{
+	width: 400px;
+	height: 400px;
+	object-fit: cover;	
+	border-radius: 30px;
+}
+
+.chef .chef-right{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.chef .chef-right img{
+	width: 20%;
+	height: 20%;
+	object-fit: cover;
+	border-radius: 50%;
+	margin: 15px;
+}
+
+/* Our Chef End */
+
+.blog-bg{
+	background: #DFE4E3;
+	padding-bottom: 50px;
+}
+
+.blog>h1{
+	text-align: center;
+	color: #FD4E00;
+	padding-top: 15px;
+	margin-bottom: 20px;
+}
+
+.blog .row{
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.blog .blog-container{
+	width: 100%;
+	height: 550px;
+	border: 1px solid #9B9191;
+	box-shadow: 2px 4px 6px #9B9191;
+	padding: 0;
+	overflow: hidden;
+	margin: auto 10px;
+	background: white;
+}
+
+.blog .blog-image img{
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+}
+
+.blog .date{
+	width: 60px;
+	height: 80px;
+	background: #FD4E00;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+.blog .month{
+	color: #F49069;
+	position: absolute;
+	top: 45px;
+	left: 10px;
+}
+
+.blog .blog-container .blog-text{
+	text-align: justify;
+	padding: 15px;
+}
+
+.blog .blog-container .blog-text .bg-text{
+	position: absolute;
+	top: 325px;
+	left: 0;
+	width: 100%;
+	height: 165px;
+	overflow: hidden;
+	padding: 15px;
+	font-size: 14px;
+}
+
+.blog .blog-container .blog-text button{
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	width: 130px;
+	height: 35px;
+	border-radius: 5px;
+	background: rgba(253,78,0,.5);
+	padding-top: 2px;
+	font-size: 14px;
+}
+
+/* Blog Section End */
+
+.contact-us{
+	text-align: center;
+	color: #FD4E00;
+	position: relative;
+	margin-top: 50px;
+}
+
+.contact-us .contact-form{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.contact-us .contact-form input{
+	width: 425px;
+	padding: 5px 0px 5px 10px;
+	border: 1px solid #FD4E00;
+	border-radius: 5px;
+}
+
+.contact-us .contact-form textarea{
+	padding: 3px 0px 3px 5px;
+	border: 1px solid #FD4E00;
+	border-radius: 5px;
+}
+
+.contact-us .contact-form button{
+	width: 100px;
+	height: 40px;
+	background: #FD4E00;
+	color: white;
+	border-radius: 7px;
+	position: absolute;
+	bottom: 15px;
+	left: 355px;
+}
+
+/* Contact Us End */
+
+.map p{
+	font-size: 11px;
+	color: #FD4E00;
+	text-align: center;
+}
+
+/* Map End*/
+
+/* Responsive Design */
+
+@media only screen and (max-width:1199px){
+	
+	.gallery .gallery-photos img{
+		width: 280px;
+    	height: 230px;
+	}
+	
+	.chef .chef-left img{
+		width: 350px;
+		height: 350px;
+	}
+	
+	.contact-us .contact-form button{
+		left: 270px;
+	}
+}
+
+@media only screen and (max-width:1024px){
+	
+	.banner .banner-image img{
+		height: 350px;
+	}
+	
+	.banner .banner-image .banner-bg{
+		height: 350px;
+	}
+	
+	.banner .banner-text .header1{
+		font-size: 40px;
+		top: 120px;
+		left: 60px;
+	}
+
+	.banner .banner-text .header2{
+		font-size: 40px;
+		top: 180px;
+		left: 140px;
+	}
+	
+	.about-us .about-image img{
+		height: 350px;
+	}
+	
+	.about-us .header-text h1{
+		font-size: 30px;
+	}
+	
+	.about-us .about-text p{
+		width: 320px;
+		top: 160px;
+		right: 30px;
+		font-size: 12px;
+	}
+	
+	.about-us .about-bg{
+		width: 320px;
+		height: 175px;
+		top: 165px;
+		right: 25px;
+	}
+	
+	.gallery .gallery-photos img{
+		width: 205px;
+    	height: 155px;
+	}
+	
+	.chef .chef-left img{
+		width: 280px;
+		height: 280px;
+	}
+	
+	.blog .blog-image img{
+		height: 210px;
+	}
+	
+	.blog .blog-container .blog-text{
+		padding: 10px;
+	}
+	
+	.blog .blog-container .blog-text h2{
+		font-size: 25px;
+	}
+	
+	.blog .blog-container .blog-text .bg-text{
+		top: 265px;
+		height: 200px;
+		padding: 10px;
+		font-size: 14px;
+	}
+	
+	.blog .blog-container .blog-text button{
+		bottom: 30px;
+		font-size: 13px;
+	}
+
+	.contact-us .contact-form button{
+		left: 155px;
+	}
+}
+
+@media only screen and (max-width:768px){
+	
+	.banner .banner-image img{
+		height: 300px;
+	}
+	
+	.banner .banner-image .banner-bg{
+		height: 300px;
+	}
+	.banner .banner-text .header1{
+		font-size: 30px;
+		top: 110px;
+		left: 60px;
+}
+
+	.banner .banner-text .header2{
+		font-size: 30px;
+		top: 160px;
+		left: 120px;
+}
+	.about-us .about-image img{
+		width: 70%;
+		height: 250px;
+}
+	.about-us .header-text h1{
+		font-size: 20px;	
+	}
+	
+	.about-us .about-text p{
+		width: 250px;
+		height: 150px;
+		overflow: hidden;
+		padding: 10px 15px;
+		top: 120px;
+		right: 30px;
+		font-size: 10px;
+	}
+		
+	.about-us .about-bg{
+		width: 250px;
+		height: 150px;
+		top: 125px;
+		right: 25px;
+	}
+	.blog .blog-container{
+		margin: 10px auto;
+	}
+	
+	.contact-us .contact-form button{
+		left: 65px;
+	}
+}
+
+@media only screen and (max-width:480px){
+	
+	.menubar .menu>ul>li{
+		margin: auto 1px;
+		padding: 6px;
+	}
+	
+	.banner .banner-image img{
+		height: 250px;
+	}
+	
+	.banner .banner-image .banner-bg{
+		height: 250px;
+	}
+	
+	.banner .banner-text .header1{
+		font-size: 25px;
+		top: 90px;
+		left: 40px;
+	}
+
+	.banner .banner-text .header2{
+		font-size: 25px;
+		top: 130px;
+		left: 90px;
+	}
+	
+	.about-us .about-image img{
+		width: 60%;
+		height: 200px;
+	}
+	
+	.about-us .header-text h1{
+		font-size: 20px;	
+	}
+	
+	.about-us .about-text p{
+		width: 220px;
+		height: 130px;
+		overflow: hidden;
+		padding: 10px 15px;
+		top: 100px;
+		right: 30px;
+		font-size: 9px;
+	}
+	
+	.about-us .about-bg{
+		width: 220px;
+		height: 130px;
+		top: 105px;
+		right: 25px;
+	}
+	
+	.gallery .gallery-photos img{
+		width: 250px;
+    	height: 200px;
+	}
+	
+	.contact-us .contact-form button{
+		left: 15px;
+	}
+}
+
+@media only screen and (max-width:320px){
+	
+	.menubar .header h1{
+		font-size: 25px;
+	}
+	
+	.menubar .menu>ul>li{
+		margin: auto 0px;
+		padding: 3px;
+		font-size: 12px;
+	}
+	
+	.banner .banner-image img{
+		height: 170px;
+	}
+	
+	.banner .banner-image .banner-bg{
+		height: 170px;
+	}
+	
+	.banner .banner-text .header1{
+		font-size: 20px;
+		top: 60px;
+		left: 20px;
+	}
+
+	.banner .banner-text .header2{
+		font-size: 20px;
+		top: 90px;
+		left: 50px;
+	}
+	
+	.about-us .about-image img{
+		width: 60%;
+		height: 170px;
+	}
+
+	.about-us .header-text h1{
+		font-size: 20px;	
+	}
+	
+	.about-us .about-text p{
+		width: 180px;
+		height: 100px;
+		overflow: hidden;
+		padding:10px 10px;
+		top: 100px;
+		right: 30px;
+		font-size: 7px;
+	}
+	
+	.about-us .about-bg{
+		width: 180px;
+		height: 100px;
+		top: 105px;
+		right: 25px;
+	}
+	
+	.gallery>h1{
+		font-size: 20px;
+	}
+	
+	.gallery .gallery-photos img{
+		width: 220px;
+    	height: 170px;
+		margin: 5px;
+    	padding: 5px;
+	}
+	
+	.chef>h1{
+		font-size: 20px;
+	}
+	
+	.chef .chef-left img{
+		width: 250px;
+		height: 250px;
+	}
+	
+	.blog>h1{
+		font-size: 20px;
+	}
+	
+	.contact-us h1{
+		font-size: 20px;
+	}
+
+	.contact-us .contact-form input{
+		width: 300px;
+		padding: 5px 0px 5px 10px;
+	}
+
+	.contact-us .contact-form textarea{
+		width: 300px;
+		padding: 3px 0px 3px 5px;
+	}
+}
