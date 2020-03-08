@@ -1,4 +1,4 @@
 # Khabar
 https://mdriasatazim.github.io/khabar/
 
-It's bootstrap project using HTML, CSS & BOOTSTRAP 4
+It's bootstrap responsive template using HTML, CSS & BOOTSTRAP 4
